@@ -7,6 +7,7 @@
     <link rel="icon" type="images/x-icon" href="images/bhimaTitle.jpg" />
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
@@ -90,21 +91,6 @@
 
             <div class="bars">
                 <div class="info">
-                    <span>HTML</span>
-                    <span>80%</span>
-                </div>
-                <div class="line js"></div>
-            </div>
-            <div class="bars">
-                <div class="info">
-                    <span>CSS</span>
-                    <span>70%</span>
-                </div>
-                <div class="line mysql"></div>
-            </div>
-
-            <div class="bars">
-                <div class="info">
                     <span>SQL-Pl/SQL</span>
                     <span>70%</span>
                 </div>
@@ -122,7 +108,23 @@
                     <span>Springboot</span>
                     <span>80%</span>
                 </div>
-                <div class="line html"></div>
+            <div class="line js"></div>
+
+            <div class="bars">
+                <div class="info">
+                    <span>HTML</span>
+                    <span>80%</span>
+                </div>
+                <div class="line js"></div>
+            </div>
+            <div class="bars">
+                <div class="info">
+                    <span>CSS</span>
+                    <span>70%</span>
+                </div>
+                <div class="line mysql"></div>
+            </div>
+                
             </div>
         </div>
     </div>
@@ -146,7 +148,7 @@
                 <div class="box">
                     <a href="https://www.linkedin.com/in/rangnath-bade-7b6825196" target="_blank"> <img src="images/rangnath.jpg" alt=""> </a>
                     <div class="text">Rangnath Bade</div>
-                    <p>Rangnath currently working with CWD an American Company. Developing high-performance applications by writing testable, reusable, and efficient code. Great organizational and time management skills.</p>
+                    <p>Rangnath currently working with CDW an American Company. Developing high-performance applications by writing testable, reusable, and efficient code. Great organizational and time management skills.</p>
                 </div>
             </div>
 
@@ -154,7 +156,7 @@
                 <div class="box">
                    <a href="https://www.linkedin.com/in/navnath-rodge-b73296200" target="_blank">  <img src="images/navnath.jpg" alt=""> </a>
                     <div class="text">Navnath Rodge</div>
-                    <p>Navnath is PHP developer working with startup company. Demonstrable knowledge of web technologies including HTML, CSS, Javascript, AJAX. Passion for best design and coding practices and a desire to develop new bold ideas</p>
+                    <p>Navnath is PHP developer working with startup company. Demonstrable knowledge of web technologies including HTML, CSS, Javascript, AJAX. Passion for best design and coding practices and a desire to develop new bold ideas.</p>
                 </div>
             </div>
     
@@ -168,7 +170,7 @@
         <div class="contact-content">
             <div class="column left">
                 <div class="text">Get in Touch</div>
-                <p>Please drop a mail to get in touch. Have a great day!</p>
+                <p>Can I help you ? Let's have a talk!</p>
                 <div class="icons">
                     <div class="row">
                         <i class="fas fa-user"></i>
@@ -246,7 +248,6 @@
         <p>Follow me on Social Media to get in touch</p>
         <a href="https://www.instagram.com/__bhimashankar__/?igsh=MW42eXlxamZrdzV5cw%3D%3D" target="_blank"><i class="fa fa-instagram"></i></a>
         <a href="https://www.linkedin.com/in/--bhimashankar--/" target="_blank"><i class="fa fa-linkedin"></i></a>
-        <a href="https://www.instagram.com/vickybhai_7?igsh=NzAzNGl1bDlucjR6" target="_blank">  <i class="fa fa-facebook"></i> </a>
     </div>
 </section>
 
@@ -259,7 +260,7 @@
 function validate(){
 var flag=true;
 var name=document.getElementById("name").value;
-var regex=/^(\+91|\+91\-|0)?[6789]\d{9}$/;
+var regex=/^(\91|0)?[6789]\d{9}$/;
 var mobileNum=document.getElementById("mobileNum").value;
 var message=document.getElementById("message").value;
 var subject=document.getElementById("subject").value;
@@ -276,9 +277,9 @@ if(flag==false){
 document.getElementById("error").style.display="inline";
 return false;
 }
-
+flag=true;
 document.getElementById("error").style.display="none";
-var mail="mailto:contactbhima576@gmai.com?subject=";
+var mail="mailto:contactbhima576@gmail.com?subject=";
 mail+=subject+"&body=Hi Bhimashankar,%0A%0A";
 mail+=message;
 mail+="%0A%0AThanks,%0A"+name+"%0AContact: "+mobileNum;
